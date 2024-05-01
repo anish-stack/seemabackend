@@ -14,7 +14,7 @@ const ConnectDB = require('./config/Db')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors({
-  origin: ['http://localhost:5173','http://localhost:3000','https://www.naturalcottoncollection.com','naturalcottoncollection.com'],
+  origin: ['http://localhost:5173','http://localhost:3000','www.naturalcottoncollection.com','naturalcottoncollection.com'],
   methods: 'GET,PUT,POST,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true
